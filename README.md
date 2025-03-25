@@ -4,9 +4,26 @@ Construindo um simples contador de pessoas
  - Atualização do contador com acões de incremento e decremento
  - Atualização do texto de acordo com a quantidade do contador
 
-## Foco
+## Objetivos
 
 Projeto com o objetivo de entender a estrutura do Flutter e aprender a construí-la do zero
+
+### Conceitos Aprendidos
+- Estrura básica do Flutter
+- Material Design 
+- Stateless
+- Stateful
+- Uso de dados privados
+- Funções
+- SetState
+- Scaffold | AppBar
+- Column
+- Row
+- Padding
+- Container
+- FloatingActionButton
+- Icons
+- Text
 
 ### Rodar o projeto
 
