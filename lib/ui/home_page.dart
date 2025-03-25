@@ -12,6 +12,29 @@ class _HomePageState extends State<HomePage> {
   String text = "Pessoas = 0";
   String phase = "Pode Entrar";
 
+  void btnChange(String type) {
+    setState(() {
+      if (type == "Decrement") {
+        num--;
+        text = "Pessoas = ${num}";
+      } else if (type == "Increment") {
+        num++;
+        text = "Pessoas = ${num}";
+      }
+      alterPhase();
+    });
+  }
+
+  void alterPhase() {
+    if (num < 0) {
+      phase = "Mundo Invertido ?";
+    } else if (num > 15) {
+      phase = "Cheio";
+    } else {
+      phase = "Pode Entrar";
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,7 +66,9 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.all(10.0),
                 width: 90.0,
                 child: FloatingActionButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    btnChange('Increment');
+                  },
                   child: Text('+', style: TextStyle(fontSize: 20.0)),
                 ),
               ),
@@ -51,7 +76,9 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.all(10.0),
                 width: 90.0,
                 child: FloatingActionButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    btnChange('Decrement');
+                  },
                   child: Text('-', style: TextStyle(fontSize: 20.0)),
                 ),
               ),
@@ -62,7 +89,7 @@ class _HomePageState extends State<HomePage> {
             child: Text(
               phase,
               style: TextStyle(
-                color: Colors.green,
+                color: num > 15 ? Colors.red : Colors.green,
                 fontWeight: FontWeight.bold,
               ),
             ),
