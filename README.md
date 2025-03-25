@@ -8,7 +8,7 @@ Construindo um simples contador de pessoas
 
 Projeto com o objetivo de entender a estrutura do Flutter e aprender a construí-la do zero
 
-### Conceitos Aprendidos
+### Conceitos aprendidos
 - Estrura básica do Flutter
 - Material Design 
 - Stateless
@@ -27,7 +27,7 @@ Projeto com o objetivo de entender a estrutura do Flutter e aprender a construí
 
 ### Rodar o projeto
 
-<em>É nessário possuir o sdk do Flutter instalado na sua máquina, além de configurar as váriaveis de ambiente<em> 
+<em>É nessário possuir o sdk do Flutter instalado na sua máquina, além de configurar as váriaveis de ambiente</em> 
 
 <b>Comandos:</b>
 
